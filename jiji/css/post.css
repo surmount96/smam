@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#4E9315;
+    --color-secondary:#F69F2F;
+    --color-gray:#ccc;
+    --color-white:#fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    background-color: #EEF2F4;
+}
+
+/*POST AD*/
+.post{
+    height:70vh;
+    font-size: 1.5rem;
+}
+
+.post_heading{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.post_link:link,
+.post_link:visited{
+    color:var(--color-primary);
+    font-weight: 700;
+}
+
+.post_lead-1,.post_lead-2{
+    display: inline-block;
+    height: 5rem;
+    padding: 1.2rem 3rem;
+    color:var(--color-white);
+}
+.post_lead-1{
+    margin-right: -3rem;
+    width: 45%;
+    background-color: #61B83B;
+    border-radius: 10rem 0 0px 10rem;
+}
+
+.post_lead-2{
+    width: 55%;
+    background-color: #99B2BF;
+    border-radius: 100px;
+}
+
+.post_form-group{
+
+}
+
+.post_form-control{
+    border: 1px solid red;
+    background: #fff;
+    padding: 1rem 2rem;
+}
+
+.post_form-control:focus{
+    border: 1px solid red;
+    outline: none;
+}
+
+.post_form-control::-input-placeholder{
+    border: 1px solid green;
+    color:red;
+}
+
+.post_form-control:placeholder-shown{
+    border: 1px solid green;
+    color:red;
+}
+
+.post-button{
+    margin-top: 1rem;
+    background: #61B83B;
+    border: none;
+    padding: 1.4rem 9rem;
+    color: var(--color-white);
+}
+
+.footer-pre{
+    background: url("../img/img.png");
+    height:35vh;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -6.5rem;
+}
+.footer{
+    background-color: #62B93B;
+    color:var(--color-white);
+    height: 35vh;
+    font-size: 1.5rem;
+}
+
+.post_list-group{
+    list-style: none;
+}
+
+.list-link:link,
+.list-link:visited{
+    color:var(--color-white);
+    font-size: 1.3rem;
+}
