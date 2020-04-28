@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/post.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+
+    <style>
+        .remove{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-green">
@@ -44,89 +50,158 @@
                 <div class="card post">
                     <div class="card-body py-5 px-4">
                         <div class="row">
-                            <div class="col-8">
-                                <h1 class="text-right post_heading">Post Ad</h1>
+                            <div class="col-md-3 text-right">
+                                <a href="#" class="post_link d-flex align-items-center"><span>&#x2190;</span> <span>Back to previous step</span></a>
                             </div>
-                            <div class="col-md-4 text-right">
+                            <div class="col-6">
+                                <h1 class="text-center post_heading">Post Ad</h1>
+                            </div>
+                            <div class="col-md-3 text-right">
                                 <a href="#" class="post_link">Clear all fields</a>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12">
-                                <p class="post_lead-1">
+                                <p class="post_lead-1" id="btn-1">
                                     Step 1: About Ad
                                 </p>
-                                <p class="post_lead-2">
+                                <p class="post_lead-2" id="btn-2">
                                     Step 2: Ad Details
                                 </p>
                             </div>
                         </div>
 <!--                        Form-->
                         <div class="row">
-                            <div class="col-12">
-                                <form action="#">
-                                    <div class="row">
+                            <div class="col-12 px-5">
+                                <form action="#" id="form-1">
+                                    <div class="row mt-4 ">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Category</label>
-                                                <select name="" id="" class="form-control">
+                                                <select name="" id="select-1" class="p_form-control">
                                                     <option value=""></option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
                                                 </select>
+                                                <label class="label">Category*</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Category</label>
-                                                <select name="" id="" class="form-control">
+                                                <select name="" id="select-2" class="p_form-control">
                                                     <option value=""></option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
-                                                    <option>Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
+                                                    <option value="Commercial Equipment & Tools">Commercial Equipment & Tools</option>
                                                 </select>
+                                                <label class="label">Subcategory*</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <input type="file" ref="done">
-                                        <div onclick="$refs.done.click">
-                                            cool
+                                    <div class="row m">
+                                        <div class="col-md-9">
+                                            <input type="file" ref="done">
+<!--                                            <div id="newContainer">-->
+<!--                                                cool-->
+<!--                                            </div>-->
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row mt-5">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Category</label>
-                                                <select name="" id="" class="form-control">
+                                                <select name="" id="select-3" class="p_form-control">
                                                     <option value=""></option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                 </select>
+                                                <label class="label">Region*</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Category</label>
-                                                <select name="" id="" class="form-control">
+                                                <select name="" id="select-4" class="p_form-control">
                                                     <option value=""></option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                     <option>Commercial Equipment & Tools</option>
                                                 </select>
+                                                <label class="label">Place*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 mx-auto">
                                             <button class="post-button">NEXT</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form action="" id="form-2">
+                                    <div class="p_form-group my-5">
+                                        <input type="text" class="p_form-control-1" placeholder="Title">
+                                        <label for="" class="label-1">Title*</label>
+                                    </div>
+                                    <div class="p_form-group">
+                                        <textarea rows="5" class="p_form-control-2" placeholder="Description"></textarea>
+                                        <label for="" class="label-2">Description*</label>
+                                    </div>
+                                    <div class="p_form-group my-3">
+                                        <span style="position: relative; z-index: 99; font-size: 2.1rem;background: #ccc; padding:1.35rem .8rem; color:#fff;margin-top: .3rem ">&#8358;</span>
+                                        <input type="text" class="p_form-control-1 p " placeholder="Price">
+
+                                        <label for="" class="label-1">Price*</label>
+                                    </div>
+                                    <div class="p_form-group">
+                                        <input type="checkbox">
+                                        <label for="">Negotiable</label>
+                                    </div>
+                                   <div class="row my-4">
+                                       <div class="col-md-6">
+                                           <div class="p_form-group">
+                                               <input type="text" class="p_form-control-3" placeholder="Your phone">
+                                               <label for="" class="label-4">Your phone</label>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                           <div class="p_form-group">
+                                               <input type="text" class="p_form-control-3" placeholder="Name" disabled value="'User name">
+                                               <label for="" class="label-4">Name</label>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="p_heading-1">Promote your ad</h3>
+                                            <p class="p_lead-2">Please, choose one of the following options to post your ad.</p>
+                                        </div>
+                                    </div>
+                                    <div class="p_form-group">
+                                        <input type="radio" name="radio_opt">
+                                        <button class="button-1">Standard ad</button>
+                                    </div>
+                                    <div class="p_form-group">
+                                        <input type="radio" name="radio_opt">
+                                        <button class="button-2">1 TOP: Others</button>
+                                        <small class="small">One advert promotion for <span class="bold">7 days</span></small>
+                                    </div>
+                                    <div class="p_form-group">
+                                        <input type="radio" name="radio_opt">
+                                        <button class="button-2">1 TOP 30d: Others</button>
+                                        <small class="small">One advert promotion for <span class="bold">30 days</span></small>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 mx-auto">
+                                            <div class="">
+                                                <button class="post-button w-100">POST AD</button>
+                                                <small class="small-1">By publishing an ad you agree and accept the <span class="bold-1">Rules of Jiji.ng</span></small>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
@@ -256,6 +331,31 @@
             </div>
         </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn-1').on('click',function () {
+                if ($('#form-1').hasClass('remove')){
+                    $('#form-1').removeClass('remove')
+                }else{
+                    $('#form-1').addClass('remove');
+                }
+            });
+            $('#form-1').addClass('remove');
+            $('#btn-2').on('click',function () {
+                if ($('#form-2').hasClass('remove')){
+                    $('#form-2').removeClass('remove')
+                }else{
+                    $('#form-2').addClass('remove');
+                }
+            });
+
+            console.log($("#select-1 option:selected").text())
+            if($('#select').value ){
+
+            }
+        })
+    </script>
 </body>
 </html>

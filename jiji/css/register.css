@@ -51,7 +51,7 @@
     display: block;
     width: 100%;
     height: 5rem;
-    padding: 0 1.5rem;
+    padding: 0 1.9rem;
     border-radius: 6px;
     border: 1px solid #999;
 }
@@ -64,6 +64,25 @@
 .register_form-control::placeholder{
     color:#ccc;
     font-size: 1.3rem;
+}
+
+.register_form-control:focus ~ .label{
+    opacity: 1;
+    transform: translate(17px,-63px);
+    padding: 0 .7rem;
+    background-color: #fff;
+    transition: transform .5s, background-color .6s;
+}
+
+.register_form-control:focus::placeholder{
+    opacity: 0;
+    display: none;
+}
+.label{
+    transform:translate(20px, -37px);
+    opacity: 0;
+    font-size: 1.2rem;
+    color:#95C8A9;
 }
 
 .button{

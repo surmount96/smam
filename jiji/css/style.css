@@ -49,6 +49,8 @@ body{
     color: var(--color-white);
     opacity: .3;
 }
+
+/*End Navigation*/
 .header{
     height:50vh;
     background: var(--color-primary);
